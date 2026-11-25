@@ -62,7 +62,4 @@ wcwidth==0.2.14
 xgboost==3.2.0
 Flask
 gunicorn
-pandas==2.3.3
-numpy==2.4.4
-scikit-learn==1.9.1
-joblib==1.5.3
+
