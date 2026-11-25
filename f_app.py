@@ -5,7 +5,7 @@ import joblib
 import json
 from pathlib import Path
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder=".")
 
 # Load the trained ML model
 BASE_DIR = Path(__file__).resolve().parent
