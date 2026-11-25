@@ -18,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent
 model = joblib.load(BASE_DIR / "hotel_cancellation_model.pkl")
 
 # ⭐ Enable CORS
-app=FastAPI(title="Hotel Booking Cancellation Prediction API")
+#app=FastAPI(title="Hotel Booking Cancellation Prediction API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5500",
