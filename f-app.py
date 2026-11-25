@@ -8,7 +8,7 @@ from pathlib import Path
 app = Flask(__name__)
 
 # Load the trained ML model
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 MODEL_PATH = BASE_DIR / "hotel_cancellation_model.pkl"
 
 model = joblib.load(MODEL_PATH)
