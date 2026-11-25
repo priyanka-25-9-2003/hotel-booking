@@ -8,9 +8,10 @@ from pathlib import Path
 app = Flask(__name__)
 
 # Load the trained ML model
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 MODEL_PATH = BASE_DIR / "hotel_cancellation_model.pkl"
-
+print("MODEL PATH:", MODEL_PATH)
+print("FILE EXISTS:", MODEL_PATH.exists())
 model = joblib.load(MODEL_PATH)
 
 # All 29 features used during ML model training
